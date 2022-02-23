@@ -1,0 +1,283 @@
+::before,
+::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    line-height: 1.8rem;
+    background: #e9e1e1;
+}
+
+nav {
+    padding: 1rem 1.5rem;
+    background: #ff0000;
+}
+
+.logo {
+    background: #00008b;
+    color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    padding: 0 0.5rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    color: #00008b;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 150px;
+    width: 120px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.nav-toggle:hover {
+    color: #ffffff;
+    transition: 1s ease-in-out;
+    transform: rotate(90deg);
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ff0000;
+}
+
+.fixed-nav .links a {
+    color: #ffffff;
+}
+
+.fixed-nav .links a:hover {
+    color: #00008b;
+    background: #ffffff;
+    transition: 1s ease-in-out;
+}
+
+.links-container {
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.links a {
+    color: #ffff;
+    display: block;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    padding: 0.2rem 0.7rem;
+}
+
+.links a:hover{
+    color: #00008b;
+    transition: 1s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+
+    .nav-header {
+        padding: 0px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links-container {
+        height: auto !important;
+
+    }
+
+    .links {
+        display: flex;
+    }
+
+    .links a {
+        color: #ffffff;
+        margin: 0 1rem;
+    }
+
+    .links a:hover{
+        color: #00008b;
+        background: #fff;
+        transition: 1s ease-in-out;
+    }
+
+}
+
+header {
+    height: 80vh;
+}
+
+.description {
+    display: grid;
+    place-items: center;
+    padding: 3rem auto;
+    text-align: center;
+}
+
+.container {
+    margin-top: 3rem;
+}
+
+.container h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.container p {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.section {
+    margin: 0 5rem;
+}
+
+.section h2 {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+#contacts {
+    /* height: 80vh;  */
+    margin-top: 5rem;
+}
+
+.cols {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-1 img {
+    margin-top: 2rem;
+}
+
+.left p {
+    margin-left: 2rem;
+}
+
+.left-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-1 img {
+    margin-top: 2rem;
+}
+
+.right-1 p {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .cols {
+        display: block;
+    }
+}
+
+.contactsBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: transparent;
+    background: transparent;
+    margin-top: 2rem;
+}
+
+.contactsBtn i {
+    font-size: 3rem;
+}
+
+.contactsBtn p {
+    margin-left: 3rem;
+}
+
+.top-link {
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: fixed;
+    padding: 0.8rem;
+    bottom: 3rem;
+    right: 1rem;
+    border: transparent;
+    border-radius: 15px;
+    background: #ff0000;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
